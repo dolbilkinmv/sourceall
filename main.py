@@ -21,7 +21,7 @@ def gensim(str1, str2, folder, folders):
     c = 0
     patterns = "[QWERTYUIOPLKJHGFDSAZXCVBNMqwertyuioplkjhgfdsazxcvbnm0123456789!#$%&'()*«+,./:;<=>?@[\]_»`{|}~—\"\-]+"
     if "утвержд" in str1[:15]:
-        if "город" in str1 and "город" not in str2:
+        if " город" in str1 and "город" not in str2:
             writer.writerow({'регион': folder, "сайт": folders, "строка 1": str1, "строка 2": str2, "rate": "город"})
         elif "республик" in str1 and "республик" not in str2:
             writer.writerow(
